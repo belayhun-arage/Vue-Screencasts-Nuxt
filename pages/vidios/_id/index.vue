@@ -2,7 +2,9 @@
     <div>
         Vidio Details
         <h1>{{vidio.name}}</h1>
-        <p>{{vidio.id}}</p>
+        <nuxt-link :to="`/vidios/${vidio.id}/edit`">
+            <button>Edit</button>
+        </nuxt-link>
     </div>
 </template>
 <script>

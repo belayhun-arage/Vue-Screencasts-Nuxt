@@ -3,7 +3,7 @@
         <h1>Vidio Lists:</h1>
         <nuxt-child :vidios="vidios"/>
         <div v-for="vidio in vidios" :key="vidio.id">
-            <h1>{{vidio.name}}</h1>
+            <nuxt-link :to="`/vidios/${vidio.id}`"><h1>{{vidio.name}}</h1></nuxt-link>
         </div>
     </div>
 </template>

@@ -1,5 +1,10 @@
 <template>
-    <h2>Editing :  {{vidio.name}}</h2>
+    <div>
+        <h2>Editing :  {{vidio.name}}</h2>
+        <nuxt-link :to="`/vidios/${vidio.id}`">
+            <button>Save&Back</button>
+        </nuxt-link>
+    </div>
 </template>
 <script>
     export default{
